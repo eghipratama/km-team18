@@ -167,56 +167,29 @@ footer {
 
 .footer-links a:hover {
   color: #ddd;
-}
+} 
 
-/* CSS Responsif untuk Semua Jenis Mobile */
+/* Responsiveness */
 @media only screen and (max-width: 768px) {
-  header {
-    padding: 15px;
+  .filter-group {
+    flex-direction: column;
   }
   
-  .header-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  .logos {
-    margin-right: 0;
+  .filter-item {
     margin-bottom: 10px;
   }
-
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
   
-  h1 {
-    font-size: 28px;
+  #total-revenue {
     text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
   }
 
-  .team-member {
-    width: 100%; /* Ukuran penuh untuk layar yang lebih kecil */
-    padding: 20px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  header {
-    padding: 10px;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-  
-  h1 {
-    font-size: 24px;
+  .chart-grid {
+    grid-template-columns: 1fr;
   }
 
-  .team-member {
-    padding: 15px;
+  .table-container {
+    overflow-x: auto;
   }
 }
